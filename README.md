@@ -1,5 +1,5 @@
 # Customer Shopping Preferences SQL Analysis
-![https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white]
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
 This repository contains SQL queries and analysis focused on the Customer Shopping Preferences Dataset. Understanding customer preferences and trends is crucial for businesses to tailor their strategies, improve products, and enhance overall customer satisfaction.
 
 ## Context
