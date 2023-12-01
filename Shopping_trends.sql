@@ -159,13 +159,6 @@ FROM ShoppingTrends..Shopping_Trends_c
 GROUP BY season
 ORDER BY purchases DESC;
 
-SELECT 
-	TOP 1 season,
-	COUNT(*) AS purchases
-FROM ShoppingTrends..Shopping_Trends_c
-GROUP BY season
-ORDER BY purchases DESC;
-
 -- Quick glance at all seasons
 
 SELECT 
@@ -193,13 +186,6 @@ FROM ShoppingTrends..Shopping_Trends_p
 GROUP BY discount_applied;
 
 -- What is the maximum and minimum review rating in the dataset?
-
-SELECT 
-	ROUND(MIN(review_rating), 4) AS min_rating,
-	ROUND(MAX(review_rating), 4) AS max_rating
-FROM ShoppingTrends..Shopping_Trends_c;
-
--- What is the most common shipping type for customers with a review rating above 4?
 
 SELECT 
 	ROUND(MIN(review_rating), 4) AS min_rating,
@@ -270,7 +256,7 @@ LEFT JOIN ShoppingTrends..Shopping_Trends_p AS p
 	ON c.customer_id = p.customer_id
 WHERE c.item_purchased = 'Socks' 
 	AND p.discount_applied = 'Yes'
-group by location
+GROUP BY location
 ORDER BY COUNT(*) DESC;
 
 -- What is the average purchase amount among customers aged 18 to 35, who have a subscription, used payment method ending with "Pal", and applied a promo code?
